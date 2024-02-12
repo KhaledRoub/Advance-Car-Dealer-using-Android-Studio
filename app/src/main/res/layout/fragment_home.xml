@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/carDealerLayout"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+        android:layout_width="268dp"
+        android:layout_height="75dp"
+        android:hint="Car Dealer"
+        android:textColorHint="?attr/editTextColor"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxCornerRadiusBottomEnd="10sp"
+        app:boxCornerRadiusBottomStart="10sp"
+        app:boxCornerRadiusTopEnd="10sp"
+        app:boxCornerRadiusTopStart="10sp"
+        app:circularflow_radiusInDP="10sp"
+        app:cursorColor="?attr/editTextColor"
+        app:hintTextColor="?attr/editTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.181">
+
+        <AutoCompleteTextView
+            android:id="@+id/carDealer"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:focusable="false"
+            android:fontFamily="sans-serif"
+            android:inputType="none"
+            android:textColor="?attr/editTextColor"
+            android:textColorHighlight="@color/cyan"
+            android:textColorHint="?attr/editTextColor"
+            android:textColorLink="?attr/editTextColor"
+            android:textCursorDrawable="@drawable/cursor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="213dp"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:text="Choose Car Dealer"
+        android:textColor="@color/cyan"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="141dp"
+        android:layout_height="38dp"
+        android:gravity="center|left"
+        android:text="Latest Favorite"
+        android:textColor="@color/cyan"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.399" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/homeFavoriteCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.552"
+        app:layout_goneMarginBottom="100dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="158dp">
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="25dp"
+                android:layout_height="18dp"
+                android:layout_alignTop="@+id/carNameHome"
+                android:layout_alignBottom="@+id/reserveBtnHome"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="153dp"
+                android:layout_marginTop="73dp"
+                android:layout_marginEnd="208dp"
+                android:layout_marginBottom="50dp"
+                app:srcCompat="@drawable/mileage" />
+
+            <TextView
+                android:id="@+id/carNameHome"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:foregroundGravity="top"
+                android:gravity="left|center"
+                android:text="BMW 840i Coupe"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/carPriceHome"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_alignTop="@+id/carNameHome"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="190dp"
+                android:layout_marginTop="37dp"
+                android:gravity="left|center"
+                android:text="$500"
+                android:textColor="#221F1F"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/priceWithOfferHome"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_alignTop="@+id/carNameHome"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="260dp"
+                android:layout_marginTop="37dp"
+                android:gravity="left|center"
+                android:text="$500"
+                android:textColor="#221F1F"
+                android:textSize="16sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/carMilesHome"
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="190dp"
+                android:layout_marginTop="84dp"
+                android:text="545 miles"
+                android:textColor="#221F1F"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/reserveBtnHome"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/carPriceHome"
+                android:layout_alignEnd="@+id/carPriceHome"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="264dp"
+                android:layout_marginTop="56dp"
+                android:layout_marginEnd="29dp"
+                android:elevation="50dp"
+                android:text="Reserve"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:cornerRadius="10sp" />
+
+            <ImageView
+                android:id="@+id/favClickHome"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/reserveBtnHome"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="336dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="-1dp"
+                android:clickable="true"
+                android:src="@drawable/favorite_border"
+                android:tag="favorite_border"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="18dp"
+                android:layout_height="20dp"
+                android:layout_alignTop="@+id/carNameHome"
+                android:layout_alignBottom="@+id/reserveBtnHome"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="157dp"
+                android:layout_marginTop="97dp"
+                android:layout_marginEnd="211dp"
+                android:layout_marginBottom="24dp"
+                app:srcCompat="@drawable/calendar" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/carNameHome"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="157dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="209dp"
+                android:layout_marginBottom="9dp"
+                app:srcCompat="@drawable/money" />
+
+            <TextView
+                android:id="@+id/carModelHome"
+                android:layout_width="58dp"
+                android:layout_height="17dp"
+                android:layout_below="@+id/carMilesHome"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="159dp"
+                android:layout_marginBottom="10dp"
+                android:text="2019"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/carImageHome"
+                android:layout_width="134dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="246dp"
+                android:layout_marginBottom="0dp"
+                app:srcCompat="@drawable/a1" />
+
+            <TextView
+                android:id="@+id/dayPriceHome"
+                android:layout_width="28dp"
+                android:layout_height="15dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="59dp"
+                android:layout_marginEnd="150dp"
+                android:layout_marginBottom="73dp"
+                android:text="/Day"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/dayWithOfferHome"
+                android:layout_width="32dp"
+                android:layout_height="15dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="297dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="57dp"
+                android:layout_marginBottom="71dp"
+                android:layout_toEndOf="@+id/priceWithOfferHome"
+                android:text="/Day"
+                android:textSize="10sp"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="157dp"
+                android:layout_marginTop="132dp"
+                android:layout_marginEnd="211dp"
+                android:layout_marginBottom="9dp"
+                app:srcCompat="@drawable/rate" />
+
+            <TextView
+                android:id="@+id/carRatingHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="203dp"
+                android:layout_marginBottom="9dp"
+                android:text="0.0"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="370dp"
+        android:layout_height="1dp"
+        android:background="@color/cyan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.353" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/homeReserveCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.954"
+        app:layout_goneMarginBottom="100dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="146dp">
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_alignTop="@+id/carNameHomeReserve"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="155dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="206dp"
+                android:layout_marginBottom="8dp"
+                app:srcCompat="@drawable/mileage" />
+
+            <TextView
+                android:id="@+id/carNameHomeReserve"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:foregroundGravity="top"
+                android:gravity="left|center"
+                android:text="BMW 840i Coupe"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/carMilesHomeReserve"
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="194dp"
+                android:layout_marginTop="62dp"
+                android:text="545 miles"
+                android:textColor="#221F1F"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="16dp"
+                android:layout_height="21dp"
+                android:layout_alignTop="@+id/carNameHomeReserve"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="159dp"
+                android:layout_marginTop="82dp"
+                android:layout_marginEnd="211dp"
+                android:layout_marginBottom="33dp"
+                app:srcCompat="@drawable/calendar" />
+
+            <TextView
+                android:id="@+id/carModelHomeReserve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/carMilesHomeReserve"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="185dp"
+                android:layout_marginBottom="10dp"
+                android:text="2019"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/carImageHomeReserve"
+                android:layout_width="156dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="230dp"
+                android:layout_marginBottom="0dp"
+                app:srcCompat="@drawable/a1" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="154dp"
+        android:layout_height="37dp"
+        android:gravity="center|left"
+        android:text="Latest Reserved"
+        android:textColor="@color/cyan"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.727" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

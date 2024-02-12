@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="5dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    app:layout_goneMarginBottom="100dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="146dp">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="27dp"
+            android:layout_height="51dp"
+            android:layout_alignTop="@+id/carNameAdmin"
+            android:layout_alignBottom="@+id/detailsBtn"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="204dp"
+            android:layout_marginBottom="37dp"
+            app:srcCompat="@drawable/mileage" />
+
+        <TextView
+            android:id="@+id/carNameAdmin"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:foregroundGravity="top"
+            android:gravity="left|center"
+            android:text="BMW 840i Coupe"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/carMilesAdmin"
+            android:layout_width="66dp"
+            android:layout_height="22dp"
+            android:layout_below="@+id/carNameAdmin"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="185dp"
+            android:layout_marginTop="-2dp"
+            android:text="545 miles"
+            android:textColor="#221F1F"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/detailsBtn"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="86dp"
+            android:layout_height="49dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="278dp"
+            android:layout_marginTop="79dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="19dp"
+            android:elevation="50dp"
+            android:text="Details"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:cornerRadius="10sp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/carNameAdmin"
+            android:layout_alignBottom="@+id/detailsBtn"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="158dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="208dp"
+            android:layout_marginBottom="11dp"
+            app:srcCompat="@drawable/calendar" />
+
+        <TextView
+            android:id="@+id/carModelAdmin"
+            android:layout_width="58dp"
+            android:layout_height="17dp"
+            android:layout_below="@+id/carMilesAdmin"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="143dp"
+            android:layout_marginBottom="10dp"
+            android:text="2019"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/carImage"
+            android:layout_width="156dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="230dp"
+            app:srcCompat="@drawable/a1" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignTop="@+id/carNameAdmin"
+            android:layout_alignBottom="@+id/detailsBtn"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="131dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="262dp"
+            android:layout_marginBottom="98dp"
+            app:srcCompat="@drawable/calendar" />
+
+        <ImageView
+            android:id="@+id/returnCar"
+            android:layout_width="28dp"
+            android:layout_height="33dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="339dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="108dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/return_car" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="238dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="159dp"
+            android:layout_marginTop="117dp"
+            android:layout_marginEnd="-11dp"
+            android:layout_marginBottom="-18dp"
+            android:max="5"
+            android:rating="0.1"
+            android:scaleX=".4"
+            android:scaleY=".4"
+            android:transformPivotX="0dp"
+            android:transformPivotY="0dp" />
+
+        <TextView
+            android:id="@+id/rateButton"
+            android:layout_width="22dp"
+            android:layout_height="12dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="257dp"
+            android:layout_marginTop="125dp"
+            android:layout_marginEnd="107dp"
+            android:layout_marginBottom="9dp"
+            android:clickable="true"
+            android:text="RATE"
+            android:textColor="@color/cyan"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    app:cardMaxElevation="16dp">
+
+
+    <LinearLayout
+        android:layout_width="374dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/manufactureFilter"
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="left|center"
+                android:text=" Manufacturer"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/manufactureFilterSpinnerLayout"
+                style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                android:layout_width="268dp"
+                android:layout_height="75dp"
+                android:textColorHint="?attr/editTextColor"
+                app:boxBackgroundColor="@android:color/white"
+                app:boxCornerRadiusBottomEnd="10sp"
+                app:boxCornerRadiusBottomStart="10sp"
+                app:boxCornerRadiusTopEnd="10sp"
+                app:boxCornerRadiusTopStart="10sp"
+                app:circularflow_radiusInDP="10sp"
+                app:cursorColor="?attr/editTextColor"
+                app:hintTextColor="?attr/editTextColor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.349">
+
+                <AutoCompleteTextView
+                    android:id="@+id/manufactureFilterSpinner"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif"
+                    android:inputType="none"
+                    android:text="All"
+                    android:textColor="?attr/editTextColor"
+                    android:textColorHighlight="@color/cyan"
+                    android:textColorHint="?attr/editTextColor"
+                    android:textColorLink="?attr/editTextColor"
+                    android:textCursorDrawable="@drawable/cursor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/modelFilter"
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="left|center"
+                android:text=" Model"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/modelFilterSpinnerLayout"
+                style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                android:layout_width="268dp"
+                android:layout_height="75dp"
+                android:textColorHint="?attr/editTextColor"
+                app:boxBackgroundColor="@android:color/white"
+                app:boxCornerRadiusBottomEnd="10sp"
+                app:boxCornerRadiusBottomStart="10sp"
+                app:boxCornerRadiusTopEnd="10sp"
+                app:boxCornerRadiusTopStart="10sp"
+                app:circularflow_radiusInDP="10sp"
+                app:cursorColor="?attr/editTextColor"
+                app:hintTextColor="?attr/editTextColor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.349">
+
+                <AutoCompleteTextView
+                    android:id="@+id/modelFilterSpinner"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif"
+                    android:inputType="none"
+                    android:text="All"
+                    android:textColor="?attr/editTextColor"
+                    android:textColorHighlight="@color/cyan"
+                    android:textColorHint="?attr/editTextColor"
+                    android:textColorLink="?attr/editTextColor"
+                    android:textCursorDrawable="@drawable/cursor" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/yearFilter"
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="left|center"
+                android:text=" Year"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/yearFilterSpinnerLayout"
+                style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                android:layout_width="268dp"
+                android:layout_height="75dp"
+                android:textColorHint="?attr/editTextColor"
+                app:boxBackgroundColor="@android:color/white"
+                app:boxCornerRadiusBottomEnd="10sp"
+                app:boxCornerRadiusBottomStart="10sp"
+                app:boxCornerRadiusTopEnd="10sp"
+                app:boxCornerRadiusTopStart="10sp"
+                app:circularflow_radiusInDP="10sp"
+                app:cursorColor="?attr/editTextColor"
+                app:hintTextColor="?attr/editTextColor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.349">
+
+                <AutoCompleteTextView
+                    android:id="@+id/yearFilterSpinner"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif"
+                    android:inputType="none"
+                    android:text="All"
+                    android:textColor="?attr/editTextColor"
+                    android:textColorHighlight="@color/cyan"
+                    android:textColorHint="?attr/editTextColor"
+                    android:textColorLink="?attr/editTextColor"
+                    android:textCursorDrawable="@drawable/cursor" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/priceFilter"
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="left|center"
+                android:text=" Price"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.slider.RangeSlider
+                android:id="@+id/priceRange"
+                android:layout_width="195dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:valueFrom="0"
+                android:valueTo="1000"
+                app:values="@array/rangeSliderValues">
+
+            </com.google.android.material.slider.RangeSlider>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/discountFilter"
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="left|center"
+                android:text=" Discount"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                app:cornerRadius="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancelFilter"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="Cancel"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/searchFilter"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="Search"
+                app:cornerRadius="10dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

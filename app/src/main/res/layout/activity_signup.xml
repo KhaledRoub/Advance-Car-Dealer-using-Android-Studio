@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:circularflow_defaultRadius="10sp"
+    tools:context=".Signup">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailLayout"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense"
+        android:layout_width="268dp"
+        android:layout_height="75dp"
+        android:textColorHint="?attr/editTextColor"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxCornerRadiusBottomEnd="10sp"
+        app:boxCornerRadiusBottomStart="10sp"
+        app:boxCornerRadiusTopEnd="10sp"
+        app:boxCornerRadiusTopStart="10sp"
+        app:circularflow_radiusInDP="10sp"
+        app:cursorColor="?attr/editTextColor"
+        app:hintTextColor="?attr/editTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.144">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:fontFamily="sans-serif"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="?attr/editTextColor"
+            android:textColorHighlight="@color/cyan"
+            android:textColorHint="?attr/editTextColor"
+            android:textColorLink="?attr/editTextColor"
+            android:textCursorDrawable="@drawable/cursor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/firstNameLayout"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense"
+        android:layout_width="130dp"
+        android:layout_height="75dp"
+        android:hint="First Name"
+        android:textColorHint="?attr/editTextColor"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxCornerRadiusBottomEnd="10sp"
+        app:boxCornerRadiusBottomStart="10sp"
+        app:boxCornerRadiusTopEnd="10sp"
+        app:boxCornerRadiusTopStart="10sp"
+        app:circularflow_radiusInDP="10sp"
+        app:cursorColor="?attr/editTextColor"
+        app:hintTextColor="?attr/editTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.270"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.246">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/firstName"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:fontFamily="sans-serif"
+            android:inputType="textPersonName"
+            android:textColor="?attr/editTextColor"
+            android:textColorHighlight="@color/cyan"
+            android:textColorHint="?attr/editTextColor"
+            android:textColorLink="?attr/editTextColor"
+            android:textCursorDrawable="@drawable/cursor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lastNameLayout"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense"
+        android:layout_width="130dp"
+        android:layout_height="75dp"
+        android:hint="Last Name"
+        android:textColorHint="?attr/editTextColor"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxCornerRadiusBottomEnd="10sp"
+        app:boxCornerRadiusBottomStart="10sp"
+        app:boxCornerRadiusTopEnd="10sp"
+        app:boxCornerRadiusTopStart="10sp"
+        app:circularflow_radiusInDP="10sp"
+        app:cursorColor="?attr/editTextColor"
+        app:hintTextColor="?attr/editTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.725"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.246">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/lastName"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:fontFamily="sans-serif"
+            android:inputType="textPersonName"
+            android:textColor="?attr/editTextColor"
+            android:textColorHighlight="@color/cyan"
+            android:textColorHint="?attr/editTextColor"
+            android:textColorLink="?attr/editTextColor"
+            android:textCursorDrawable="@drawable/cursor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/genderLayout"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+        android:layout_width="268dp"
+        android:layout_height="75dp"
+        android:hint="Gender"
+        android:textColorHint="?attr/editTextColor"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxCornerRadiusBottomEnd="10sp"
+        app:boxCornerRadiusBottomStart="10sp"
+        app:boxCornerRadiusTopEnd="10sp"
+        app:boxCornerRadiusTopStart="10sp"
+        app:circularflow_radiusInDP="10sp"
+        app:cursorColor="?attr/editTextColor"
+        app:hintTextColor="?attr/editTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.349">
+
+        <AutoCompleteTextView
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:fontFamily="sans-serif"
+            android:inputType="none"
+            android:textColor="?attr/editTextColor"
+            android:textColorHighlight="@color/cyan"
+            android:textColorHint="?attr/editTextColor"
+            android:textColorLink="?attr/editTextColor"
+            android:textCursorDrawable="@drawable/cursor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordLayout"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense"
+        android:layout_width="268dp"
+        android:layout_height="75dp"
+        android:hint="Password"
+        android:textColorHint="?attr/editTextColor"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxCornerRadiusBottomEnd="10sp"
+        app:boxCornerRadiusBottomStart="10sp"
+        app:boxCornerRadiusTopEnd="10sp"
+        app:boxCornerRadiusTopStart="10sp"
+        app:circularflow_radiusInDP="10sp"
+        app:cursorColor="?attr/editTextColor"
+        app:endIconMode="password_toggle"
+        app:hintTextColor="?attr/editTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.454"
+        app:placeholderTextColor="?attr/editTextColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:fontFamily="sans-serif"
+            android:inputType="textPassword"
+            android:textColor="?attr/editTextColor"
+            android:textColorHighlight="@color/cyan"
+            android:textColorHint="?attr/editTextColor"
+            android:textColorLink="?attr/editTextColor"
+            android:textCursorDrawable="@drawable/cursor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/confirmPasswordLayout"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense"
+        android:layout_width="268dp"
+        android:layout_height="75dp"
+        android:hint="Confirm Password"
+        android:textColorHint="?attr/editTextColor"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxCornerRadiusBottomEnd="10sp"
+        app:boxCornerRadiusBottomStart="10sp"
+        app:boxCornerRadiusTopEnd="10sp"
+        app:boxCornerRadiusTopStart="10sp"
+        app:circularflow_radiusInDP="10sp"
+        app:cursorColor="?attr/editTextColor"
+        app:endIconMode="password_toggle"
+        app:hintTextColor="?attr/editTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.558"
+        app:placeholderTextColor="?attr/editTextColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:fontFamily="sans-serif"
+            android:inputType="textPassword"
+            android:textColor="?attr/editTextColor"
+            android:textColorHighlight="@color/cyan"
+            android:textColorHint="?attr/editTextColor"
+            android:textColorLink="?attr/editTextColor"
+            android:textCursorDrawable="@drawable/cursor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/countryLayout"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+        android:layout_width="268dp"
+        android:layout_height="75dp"
+        android:hint="Country"
+        android:textColorHint="?attr/editTextColor"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxCornerRadiusBottomEnd="10sp"
+        app:boxCornerRadiusBottomStart="10sp"
+        app:boxCornerRadiusTopEnd="10sp"
+        app:boxCornerRadiusTopStart="10sp"
+        app:circularflow_radiusInDP="10sp"
+        app:cursorColor="?attr/editTextColor"
+        app:hintTextColor="?attr/editTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.662">
+
+        <AutoCompleteTextView
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:fontFamily="sans-serif"
+            android:inputType="none"
+            android:textColor="?attr/editTextColor"
+            android:textColorHighlight="@color/cyan"
+            android:textColorHint="?attr/editTextColor"
+            android:textColorLink="?attr/editTextColor"
+            android:textCursorDrawable="@drawable/cursor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cityLayout"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+        android:layout_width="268dp"
+        android:layout_height="75dp"
+        android:hint="City"
+        android:textColorHint="?attr/editTextColor"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxCornerRadiusBottomEnd="10sp"
+        app:boxCornerRadiusBottomStart="10sp"
+        app:boxCornerRadiusTopEnd="10sp"
+        app:boxCornerRadiusTopStart="10sp"
+        app:circularflow_radiusInDP="10sp"
+        app:cursorColor="?attr/editTextColor"
+        app:hintTextColor="?attr/editTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.768">
+
+        <AutoCompleteTextView
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:fontFamily="sans-serif"
+            android:inputType="none"
+            android:textColor="?attr/editTextColor"
+            android:textColorHighlight="@color/cyan"
+            android:textColorHint="?attr/editTextColor"
+            android:textColorLink="?attr/editTextColor"
+            android:textCursorDrawable="@drawable/cursor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phoneLayout"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense"
+        android:layout_width="268dp"
+        android:layout_height="75dp"
+        android:hint="Phone Number"
+        android:textColorHint="?attr/editTextColor"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxCornerRadiusBottomEnd="10sp"
+        app:boxCornerRadiusBottomStart="10sp"
+        app:boxCornerRadiusTopEnd="10sp"
+        app:boxCornerRadiusTopStart="10sp"
+        app:circularflow_radiusInDP="10sp"
+        app:cursorColor="?attr/editTextColor"
+        app:hintTextColor="?attr/editTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.874">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:fontFamily="sans-serif"
+            android:inputType="phone"
+            android:textColor="?attr/editTextColor"
+            android:textColorHighlight="@color/cyan"
+            android:textColorHint="?attr/editTextColor"
+            android:textColorLink="?attr/editTextColor"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textSize="16.5sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/signupButton"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="140dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="136dp"
+        android:text="Sign Up"
+        android:textSize="20sp"
+        app:cornerRadius="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="224dp"
+        android:layout_height="58dp"
+        android:gravity="center"
+        android:text="SIGN UP"
+        android:textColor="#16b2a5"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.034" />
+
+    <ImageView
+        android:id="@+id/backLogin"
+        android:layout_width="45dp"
+        android:layout_height="37dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051"
+        app:srcCompat="@drawable/left_arrow" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

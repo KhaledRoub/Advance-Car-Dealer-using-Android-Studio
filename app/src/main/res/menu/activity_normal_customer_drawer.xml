@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_car"
+            android:icon="@drawable/baseline_view_list_24"
+            android:title="@string/menu_car" />
+        <item
+            android:id="@+id/nav_reservations"
+            android:icon="@drawable/_476999"
+            android:title="@string/menu_reservations" />
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/baseline_favorite_24"
+            android:title="@string/menu_favorites" />
+        <item
+            android:id="@+id/nav_special_offers"
+            android:icon="@drawable/baseline_local_offer_24"
+            android:title="@string/menu_special_offers" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/baseline_person_24"
+            android:title="@string/menu_profile" />
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/baseline_contact_support_24"
+            android:title="@string/menu_contact" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/baseline_logout_24"
+            android:title="@string/menu_logout" />
+    </group>
+</menu>

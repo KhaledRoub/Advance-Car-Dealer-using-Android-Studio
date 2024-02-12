@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.contact.ContactFragment">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="275dp"
+        android:layout_height="124dp"
+        android:src="@drawable/car_login_no_background_mirrored"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="142dp"
+        android:layout_height="27dp"
+        android:src="@drawable/car_dealer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="282dp"
+        android:layout_height="70dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Contact Us"
+        android:textColor="@color/cyan"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/phoneContact"
+        android:layout_width="38dp"
+        android:layout_height="34dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.507"
+        app:srcCompat="@color/cyan" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="20dp"
+        android:layout_height="22dp"
+        android:src="@drawable/phone_contact"
+        app:layout_constraintBottom_toBottomOf="@+id/phoneContact"
+        app:layout_constraintEnd_toEndOf="@+id/phoneContact"
+        app:layout_constraintStart_toStartOf="@+id/phoneContact"
+        app:layout_constraintTop_toTopOf="@+id/phoneContact" />
+
+    <TextView
+        android:id="@+id/phoneNumber"
+        android:layout_width="212dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:clickable="true"
+        android:gravity="center|left"
+        android:text="+970-599-000-000"
+        android:textColor="#635D5D"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toEndOf="@+id/phoneContact"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.157" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/emailContact"
+        android:layout_width="38dp"
+        android:layout_height="34dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.615"
+        app:srcCompat="@color/cyan" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="20dp"
+        android:layout_height="22dp"
+        android:src="@drawable/email_contact"
+        app:layout_constraintBottom_toBottomOf="@+id/emailContact"
+        app:layout_constraintEnd_toEndOf="@+id/emailContact"
+        app:layout_constraintStart_toStartOf="@+id/emailContact"
+        app:layout_constraintTop_toTopOf="@+id/emailContact" />
+
+
+    <TextView
+        android:id="@+id/emailAddress"
+        android:layout_width="212dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:clickable="true"
+        android:gravity="center|left"
+        android:text="CarDealer@cars.com"
+        android:textColor="#635D5D"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toEndOf="@+id/emailContact"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.339" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/locationContact"
+        android:layout_width="38dp"
+        android:layout_height="34dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.733"
+        app:srcCompat="@color/cyan" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="20dp"
+        android:layout_height="22dp"
+        android:src="@drawable/location_contact"
+        app:layout_constraintBottom_toBottomOf="@+id/locationContact"
+        app:layout_constraintEnd_toEndOf="@+id/locationContact"
+        app:layout_constraintStart_toStartOf="@+id/locationContact"
+        app:layout_constraintTop_toTopOf="@+id/locationContact" />
+
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="287dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="8dp"
+        android:clickable="true"
+        android:gravity="center|left"
+        android:text="Kharbatha al-Misbah\nRamallah\nPalestine"
+        android:textColor="#635D5D"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toEndOf="@+id/locationContact"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.482" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="330dp"
+        android:layout_height="1dp"
+        android:background="@color/cyan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.783" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="330dp"
+        android:layout_height="1dp"
+        android:background="@color/cyan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.663" />
+
+    <View
+        android:layout_width="330dp"
+        android:layout_height="1dp"
+        android:background="@color/cyan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.558" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
