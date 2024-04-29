@@ -61,7 +61,7 @@ A car dealer has requested you to develop an Android application that enables us
 ## **Images from the App**
    Here are some images from the app. For more, please check the 'Images' folder.
    
-   ![](images/connect_page.png)
+![image](https://github.com/KhaledRoub/Advance-Car-Dealer-using-Android-Studio/assets/131482786/31ee5666-37d1-4239-8ca3-c86c0d0fac05)
    ![](images/login_page.png)
    ![](images/signup_page.png)
    ![](images/special_page.png)
