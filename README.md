@@ -17,7 +17,7 @@ A car dealer has requested you to develop an Android application that enables us
 
    The following image shows how the data should look in the mock API. If the mock API is down, try uploading the data from 'data.json' to it.
 
-   ![](images/data_in_api.png)
+![image](https://github.com/KhaledRoub/Advance-Car-Dealer-using-Android-Studio/assets/131482786/e24b117b-5887-4246-bcff-3ca24214c183)
 
 
 ## **3- Home Layout (Sign in as Normal Customer)**
@@ -62,6 +62,6 @@ A car dealer has requested you to develop an Android application that enables us
    Here are some images from the app. For more, please check the 'Images' folder.
    
 ![image](https://github.com/KhaledRoub/Advance-Car-Dealer-using-Android-Studio/assets/131482786/31ee5666-37d1-4239-8ca3-c86c0d0fac05)
-   ![](images/login_page.png)
-   ![](images/signup_page.png)
-   ![](images/special_page.png)
+![image](https://github.com/KhaledRoub/Advance-Car-Dealer-using-Android-Studio/assets/131482786/056d832e-419c-48c4-81dc-e659ab0c9893)
+![image](https://github.com/KhaledRoub/Advance-Car-Dealer-using-Android-Studio/assets/131482786/e2b6d1c9-6136-4b72-a0c8-d598baf825b2)
+![image](https://github.com/KhaledRoub/Advance-Car-Dealer-using-Android-Studio/assets/131482786/618bb47a-10e2-4678-8052-b1e803aa9e1f)
